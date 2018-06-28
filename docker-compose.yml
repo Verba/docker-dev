@@ -12,3 +12,9 @@ services:
       MYSQL_ALLOW_EMPTY_PASSWORD: 1
   memcached:
     image: memcached
+  chrome_driver:
+    image: verba/docker-chromedriver:latest
+    shm_size: 1gb
+    privileged: true
+    environment:
+      CHROMEDRIVER_WHITELISTED_IPS: ''
