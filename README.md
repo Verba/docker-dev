@@ -18,10 +18,23 @@ Images that we use across projects
 
 Image to run commands on circleci with the basic circleci setup.
 
-Published as `verba / circleci-node-awsebcli`
+Published as `verba/circleci-node-awsebcli`
 
-Push new one as `docker push verba/circleci-node-awsebcli:tagname`
+Push new one:
+You'll increment the tag name so that builds can use the right one. Then:
+```
+docker build . -t verba/circleci-node-awsebcli
+docker push verba/circleci-node-awsebcli:<tagname>
+```
 
+## verba/docker-chromedriver
+
+This is just a pegged version of the [robcherry/docker-chromedriver](https://hub.docker.com/r/robcherry/docker-chromedriver/). To update it:
+```bash
+docker pull robcherry/docker-chromedriver
+docker tag robcherry/docker-chromedriver verba/docker-chromedriver
+docker push verba/docker-chromedriver:latest
+```
 
 
 # Helpful Docker Commands & Links
