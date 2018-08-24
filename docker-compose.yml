@@ -18,3 +18,10 @@ services:
     privileged: true
     environment:
       CHROMEDRIVER_WHITELISTED_IPS: ''
+  elasticsearch24:
+    image: elasticsearch:2.4
+    ports:
+      - 9201:9200
+      - 9300:9300
+    environment:
+      discovery.type: single-node

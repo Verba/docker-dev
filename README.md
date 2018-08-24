@@ -1,7 +1,13 @@
+This repository is for Docker related tools across the development team.
+
 # Dev Tools
 
-This is a docker compose file that gives you a Redis and Memcached so that 
-you don't have to install them locally. We can add other tools to make
+This is a docker compose file that gives you a 
+  * Redis 
+  * Memcached
+  * elasticsearch
+
+Using this, you don't have to install them locally. We can add other tools to make
 bootstrapping new projects easier. 
 
   1. Get docker going. See the interwebs for the latest documentation.
